@@ -4,7 +4,6 @@ import facebookLogo from "../img/facebook-logo.png";
 import instagramLogo from "../img/instagram_icon.png";
 import youtubeLogo from "../img/Youtube_logo_5.png";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
 function FollowMe() {
   return (
     <Container
