@@ -11,10 +11,12 @@ function NavBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="/MayraMaldonado">Inicio</Nav.Link>
-            <Nav.Link href="/SobreMi">Trayectoria</Nav.Link>
-            <Nav.Link href="/QueOfrecemos">Ofrecimientos</Nav.Link>
-            <Nav.Link href="/MiLibro">Libros</Nav.Link>
-            <Nav.Link href="/Podcast">Podcast</Nav.Link>
+            <Nav.Link href="/MayraMaldonado/SobreMi">Trayectoria</Nav.Link>
+            <Nav.Link href="/MayraMaldonado/QueOfrecemos">
+              Ofrecimientos
+            </Nav.Link>
+            <Nav.Link href="/MayraMaldonado/MiLibro">Libros</Nav.Link>
+            <Nav.Link href="/MayraMaldonado/Podcast">Podcast</Nav.Link>
             <NavDropdown title="Mas" id="basic-nav-dropdown">
               <NavDropdown.Item href="/Contactos">Contactos</NavDropdown.Item>
               <NavDropdown.Divider />
