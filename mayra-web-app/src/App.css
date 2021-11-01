@@ -1,0 +1,25 @@
+* {
+  box-sizing: content-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.home {
+  /* background-color: goldenrod; */
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+.sobre-mi {
+  background-image: linear-gradient(to bottom right, blue, yellow);
+}
+
+.que-ofrecemos {
+  background-image: linear-gradient(to bottom right, red, yellow);
+}
+
+.libros {
+  background-image: linear-gradient(to bottom right, blue, aqua);
+}
+
+.yellow:hover {
+  background-color: yellow;
+}
