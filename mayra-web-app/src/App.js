@@ -14,15 +14,8 @@ function App() {
   return (
     <Fade>
       <Switch>
-        <Route
-          exact
-          path={process.env.PUBLIC_URL + "/"}
-          component={HomeView}
-        ></Route>
-        <Route
-          path={process.env.PUBLIC_URL + "/SobreMi"}
-          component={SobreMi}
-        ></Route>
+        <Route exact path="/" component={HomeView}></Route>
+        <Route path="/SobreMi" component={SobreMi}></Route>
         <Route path="/QueOfrecemos" component={QueOfrecemosView}></Route>
         <Route exact path="/MiLibro" component={MiLibro}></Route>
         <Route path="/Podcast" component={PodcastView}></Route>
