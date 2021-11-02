@@ -1,27 +1,35 @@
 import { Navbar, NavDropdown, Container, Nav } from "react-bootstrap";
-
+import { LinkContainer } from "react-router-bootstrap";
 function NavBar() {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="/MayraMaldonado">
+        <Navbar.Brand href="/mayra-web-app">
           Mayra Maldonado Brignoni
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/MayraMaldonado">Inicio</Nav.Link>
-            <Nav.Link href="/MayraMaldonado/SobreMi">Trayectoria</Nav.Link>
-            <Nav.Link href="/MayraMaldonado/QueOfrecemos">
-              Ofrecimientos
-            </Nav.Link>
-            <Nav.Link href="/MayraMaldonado/MiLibro">Libros</Nav.Link>
-            <Nav.Link href="/MayraMaldonado/Podcast">Podcast</Nav.Link>
-            <NavDropdown title="Mas" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/Contactos">Contactos</NavDropdown.Item>
+            <LinkContainer to="/">
+              <Nav.Link>Inicio</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/SobreMi">
+              <Nav.Link>Trayectoria</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/QueOfrecemos">
+              <Nav.Link>Ofrecimientos</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/MiLibro">
+              <Nav.Link>Libros</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/Podcast">
+              <Nav.Link>Podcast</Nav.Link>
+            </LinkContainer>
+            {/* <NavDropdown title="Mas" id="basic-nav-dropdown">
+              <NavDropdown.Item to="/Contactos">Contactos</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/Noticias">Noticias</NavDropdown.Item>
-            </NavDropdown>
+              <NavDropdown.Item to="/Noticias">Noticias</NavDropdown.Item>
+            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
